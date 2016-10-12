@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Index page</title></head>
+<body>
+  <h1>Welcome, {{ request.user }}!</h1>
+  <p>QR-Code</p>
+  <img src="https://chart.googleapis.com/chart?cht=qr&amp;chs=128x128&amp;chl={{ qr_code }}" alt="{{ code }}" />
+</body>
+</html>
